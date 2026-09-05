@@ -46,3 +46,5 @@ jobs:
           kubectl apply -f starter/backend/k8s/service.yaml
           kubectl set image deployment/backend backend=$ECR_REGISTRY/$ECR_REPOSITORY:${{ github.sha }}
           kubectl rollout status deployment/backend
+# Backend CD
+
